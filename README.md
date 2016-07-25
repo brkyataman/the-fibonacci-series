@@ -1,5 +1,7 @@
 # the-fibonacci-series
 
+Program F(46) dan sonra hata vermekte çünkü sayılar integer değerinde ve 46. fibonacci sayısından sonra bu değer aşılıyor.
+
 ##1.Rekürsif Metod
 
 Algoritma n'den 1. ve 2. fibonacci sayısına gelene kadar her elemanı hesaplamak için kendini çağırır. Fakat hiç de verimli bir metod değildir çünkü fonksiyonun her kendini çağırışında önceden hesaplanmış eleman tekrar tekrar hesaplanmak zorunda kalır.
