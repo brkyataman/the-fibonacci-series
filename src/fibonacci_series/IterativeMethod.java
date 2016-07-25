@@ -6,8 +6,9 @@ public class IterativeMethod {
 		int firstElem = 1;
 		int secondElem = 1;
 		int result = 0;
+		//F(1) and F(2) are known so for loop starts from 3
 		for(int i = 3; i <= n; i++){
-			result = firstElem + secondElem;
+			result = firstElem + secondElem; //Each time result grows iteratively
 			firstElem = secondElem;
 			secondElem = result;
 		}
