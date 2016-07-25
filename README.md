@@ -48,3 +48,17 @@ Metodların time complexitysini karşılaştırdığımızda beklediğimiz gibi 
 3. Rekürsif Metod
 
 Performans kaygısı güdülen bir ortamda elbette üssel matris metodunun kullanılacağı aşikar.
+
+##Örnek Çıktılar
+
+1. Recursive metoduyla 35. fibonacci sayısı.
+
+![35_rec](https://github.com/brkyataman/the-fibonacci-series/blob/master/fib_35_rec.PNG)
+
+2. Iterative metoduyla 35. fibonacci sayısı.
+
+![35_rec](https://github.com/brkyataman/the-fibonacci-series/blob/master/fib_35_it.PNG)
+
+3. Matrix Exponentiation metoduyla 35. fibonacci sayısı.
+
+![35_rec](https://github.com/brkyataman/the-fibonacci-series/blob/master/fib_35_matrix.PNG)
