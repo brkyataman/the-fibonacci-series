@@ -25,3 +25,24 @@ For döngüsün n-3 kere dönmektedir daha sonra doğru sonuca varılmaktadır. 
 
 Bunu Fibonacci serisine uygulamak için şu yöntem kullanılır:
 
+![matrix-logic](https://github.com/brkyataman/the-fibonacci-series/blob/master/fib-matrix-logic.PNG)
+
+F(8) sayısı (U * U), (U^2 * U^2) ve daha sonra (U^4 * U^4) hesaplanarak yani 3 adımda bulunabilir.
+
+Tabi programda bu sayıyı hesaplamak için ikiye bölme işlemi yaparak sonuca gidilir. Örneğin F(8), F(1) olana kadar rekürsif olarak ikiye bölünür. F(1) olduğunda bulunan matrisler kendileriyle çarpılarak ikiye katlanıp yukarıya doğru çıkar. '8' sayısı için bir problem yoktur çünkü hiç tek sayı olmadan 1'e kadar ayrılır fakat 9 sayısında problem çıkabilmektedir. 9'u ikiye bölünce program sayıyı aşağıya doğru yuvarladığından birim matris çarpımlarından bir tanesi eksik kalır. Bundan dolayı sayısının tekliği/çiftliği kontrol edilir ve tek ise bir kez daha birim matris ile çarpılır.
+
+    U = Birim Matris = {{1,1},{1,0}}
+    
+Bu algoritmada n sayısını 1'e kadar ikiye böldüğü için 'time complexity'si log tabanında olacaktır.
+
+    F(n) = O(logn)
+    
+##Sonuç
+
+Metodların time complexitysini karşılaştırdığımızda beklediğimiz gibi en hızlıdan en yavaşa metodlar:
+
+1. Üssel Matris Metodu
+2. Iteratif Metod
+3. Rekürsif Metod
+
+Performans kaygısı güdülen bir ortamda elbette üssel matris metodunun kullanılacağı aşikar.
